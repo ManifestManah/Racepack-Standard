@@ -81,10 +81,10 @@ block grenade
 			if (event_var(es_attackerdead) = 0) do
 			{
 				es damage event_var(userid) server_var(wcs_dmg) 1 event_var(attacker)
-				es wcs_getlanguage wcs_lng "player_skill1" 0 "orcish_horde"
+				es wcs_getlanguage wcs_lng "player_skill2" 0 "orcish_horde"
 				es wcs_xtell event_var(attacker) server_var(wcs_lng) value1 server_var(wcs_dmg)
-				es wcs_getlanguage wcs_lng "target_skill1" 0 "orcish_horde"
-				es wcs_xtell event_var(userid) server_var(wcs_lng) value1 server_var(wcs_dmg)				
+				es wcs_getlanguage wcs_lng "target_skill2" 0 "orcish_horde"
+				es wcs_xtell event_var(userid) server_var(wcs_lng) value1 server_var(wcs_dmg)
 				es_getplayerlocation wcs_x1 wcs_y1 wcs_z1 event_var(userid)
 				es_xmath wcs_z1 + 15
 				es est_effect 10 #a 0 sprites\lgtning.vmt server_var(wcs_x1) server_var(wcs_y1) server_var(wcs_z1) 25 26 0.75 8 5 0 255 71 36 255 0
