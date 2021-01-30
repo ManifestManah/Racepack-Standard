@@ -61,7 +61,7 @@ block berserk
 	es_xmath wcs_speed * 100
 	es wcs_decimal wcs_speed server_var(wcs_speed)
 	es wcs_getlanguage wcs_lng "player_skill1" 0 "flame_predator"
-	es wcs_xtell event_var(userid) server_var(wcs_lng) value1 server_var(wcs_addhealth) value2 server_var(wcs_speed)%
+	es wcs_xtell event_var(userid) server_var(wcs_lng) value1 server_var(wcs_addhealth) value2 server_var(wcs_speed)
 	ifx true(wcs_race_debugging) do
 	{
 		wcs_log [Race]: Flame Predator - [Block] Skill: 1 (END)
