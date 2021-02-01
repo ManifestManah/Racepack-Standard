@@ -1,6 +1,6 @@
 //////////////////////
 //Standard Race Pack//
-//Version 1.0.10B    //
+//Version 1.0.11B   //
 //////////////////////
 
 block spawn
@@ -122,7 +122,7 @@ block claw
 					es wcs_getlanguage wcs_lng "target_skill4" 0 "flame_predator"
 					es wcs_xcentertell event_var(userid) server_var(wcs_lng)
 					es_delayed .1 wcs_getlanguage wcs_lng "player_skill4" 0 "flame_predator"
-					es_delayed .1 wcs_xcentertell event_var(attacker) server_var(wcs_lng) value1 event_var(es_username)
+					es_xdelayed 0.1 es wcs_xcentertell event_var(attacker) server_var(wcs_lng) value1 event_var(es_username)
 				}
 			}
 		}
