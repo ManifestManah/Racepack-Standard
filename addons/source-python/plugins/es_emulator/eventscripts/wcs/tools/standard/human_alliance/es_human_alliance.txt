@@ -153,8 +153,6 @@ block teleport
         es_playsound server_var(wcs_userid) wcs/teleport.mp3 1
     }
     
-
-
     else do
     {
         if (server_var(wcs_range) < server_var(wcs_x)) do
@@ -185,9 +183,7 @@ block teleport
             }
             es_xcopy wcs_x1 wcs_x2
         }
-        
-
-        
+                
         if (server_var(wcs_range) < server_var(wcs_y)) do
         {
             if (server_var(wcs_y2) >= 0) do
@@ -216,9 +212,7 @@ block teleport
             }
             es_xcopy wcs_y1 wcs_y2
         }
-        
-
-        
+                
         if (server_var(wcs_range) < server_var(wcs_z)) do
         {
             if (server_var(wcs_z2) >= 0) do
@@ -247,8 +241,6 @@ block teleport
             }
             es_xcopy wcs_z1 wcs_z2
         }
-
-
 
 	    ifx false(wcs_legacy_teleport_type) do
 	    {
